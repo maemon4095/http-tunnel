@@ -6,6 +6,7 @@ Deno.serve(tunnel, async (req) => {
     console.log("tunnel connected.");
     console.log("start connect to", connection);
     const conn = await Deno.connect(connection);
+    conn.setNoDelay(true);
     req.body?.pipeTo(conn.writable);
     return new Response(conn.readable);
 });
