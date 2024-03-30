@@ -11,3 +11,9 @@ clap = { workspace = true }
 thiserror = { workspace = true }
 http = { workspace = true }
 tokio = { workspace = true }
+futures = { workspace = true }
+hyper-util = { workspace = true }
+tokio-stream = { workspace = true }
+http-body-util = { workspace = true }
+tokio-util = { workspace = true }
+http-tunnel-util = { path = "../http-tunnel-util" }

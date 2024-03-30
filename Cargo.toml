@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["http-tunnel-client", "http-tunnel-server"]
+members = ["http-tunnel-client", "http-tunnel-server", "http-tunnel-util"]
 
 
 [workspace.dependencies]
@@ -13,3 +13,4 @@ futures = "0.3"
 hyper-util = { version = "0.1", features = ["full"] }
 tokio-stream = "0.1"
 tokio-util = { version = "0.7", features = ["io"] }
+http-body-util = "0.1"
