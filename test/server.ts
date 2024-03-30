@@ -5,6 +5,7 @@ for await (const conn of listener) {
     while (true) {
         const now = new Date();
         const iso = now.toISOString();
+        console.log("send", iso);
         const chunk = new TextEncoder().encode(`${iso}\n`);
         await conn.write(chunk);
         await wait(500);
